@@ -15,16 +15,88 @@ export const categories = [
 export const categoryWiseItems = {
   soups: {
     veg: [
-      { label: "Veg Manchurian1", value: "veg-manchurian-1", price: 200 },
-      { label: "Veg Manchurian2", value: "veg-manchurian-2", price: 201 },
-      { label: "Veg Manchurian3", value: "veg-manchurian-3", price: 202 },
-      { label: "Veg Manchurian4", value: "veg-manchurian-4", price: 203 },
+      {
+        label: "Tomato Soup",
+        price: 100,
+        value: "tomato-soup",
+      },
+      {
+        label: "Tomato Soup 1/2",
+        price: 130,
+        value: "tomato-soup-1/2",
+      },
+      {
+        label: "Sweet Corn Soup",
+        price: 100,
+        value: "sweet-corn-soup",
+      },
+      {
+        label: "Sweet Corn Soup 1/2",
+        price: 120,
+        value: "sweet-corn-soup-1/2",
+      },
+      {
+        label: "Lemon Coriander Soup",
+        price: 100,
+        value: "lemon-coriander-soup",
+      },
+      {
+        label: "Lemon Coriander Soup 1/2",
+        price: 120,
+        value: "lemon-coriander-soup-1/2",
+      },
+      {
+        label: "Veg Hot &amp; Sour Soup",
+        price: 100,
+        value: "veg-hot-&amp;-sour-soup",
+      },
+      {
+        label: "Veg Hot &amp; Sour Soup 1/2",
+        price: 120,
+        value: "veg-hot-&amp;-sour-soup-1/2",
+      },
+      {
+        label: "Mushroom Soup",
+        price: 120,
+        value: "mushroom-soup",
+      },
+      {
+        label: "Mushroom Soup 1/2",
+        price: 140,
+        value: "mushroom-soup-1/2",
+      },
     ],
     "non-veg": [
-      { label: "Veg Manchurian5", value: "veg-manchurian-5", price: 204 },
-      { label: "Veg Manchurian6", value: "veg-manchurian-6", price: 205 },
-      { label: "Veg Manchurian7", value: "veg-manchurian-7", price: 206 },
-      { label: "Veg Manchurian8", value: "veg-manchurian-8", price: 207 },
+      {
+        label: "Chicken Sweet Corn Soup",
+        price: 100,
+        value: "chicken-sweet-corn-soup",
+      },
+      {
+        label: "Chicken Sweet Corn Soup 1/2",
+        price: 130,
+        value: "chicken-sweet-corn-soup-1/2",
+      },
+      {
+        label: "Chicken Lemon Coriander Soup",
+        price: 100,
+        value: "chicken-lemon-coriander-soup",
+      },
+      {
+        label: "Chicken Lemon Coriander Soup 1/2",
+        price: 120,
+        value: "chicken-lemon-coriander-soup-1/2",
+      },
+      {
+        label: "Chicken Hot &amp; Sour Soup",
+        price: 100,
+        value: "chicken-hot-&amp;-sour-soup",
+      },
+      {
+        label: "Chicken Hot &amp; Sour Soup 1/2",
+        price: 120,
+        value: "chicken-hot-&amp;-sour-soup-1/2",
+      },
     ],
   },
 };
