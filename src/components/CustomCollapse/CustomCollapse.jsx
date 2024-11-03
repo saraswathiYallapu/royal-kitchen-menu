@@ -4,6 +4,7 @@
 import { Collapse } from "antd";
 import styled from "styled-components";
 import CategoryWiseList from "./CategoryWiseList";
+import { useState } from "react";
 
 const StyledCollapse = styled(Collapse)`
   && {
@@ -15,23 +16,32 @@ const StyledCollapse = styled(Collapse)`
         color: #ffd700;
       }
     }
+    .ant-collapse-content-box {
+      padding: 8px 16px;
+      background-color: #000000;
+    }
   }
 `;
 
 const CustomCollapse = ({ items }) => {
+  const [activeCollapseKey, setActiveCollapseKey] = useState(null);
+
+  console.log({ activeCollapseKey });
   return (
     <>
       <StyledCollapse
         accordion
         collapsible="header"
-        defaultActiveKey={["1"]}
+        activeKey={activeCollapseKey}
         items={items.map((item) => ({
           key: item.value,
           label: item.label,
-          children: <CategoryWiseList />,
+          children: (
+            <CategoryWiseList category={activeCollapseKey?.[0] || null} />
+          ),
         }))}
         expandIconPosition={"end"}
-        // bordered={false}
+        onChange={(val) => setActiveCollapseKey(val)}
       />
     </>
   );
