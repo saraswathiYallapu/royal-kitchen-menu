@@ -1,0 +1,8 @@
+.list-container{
+    height: 100vh;
+    display: flex;
+    flex-grow: 1;
+    overflow-y: auto;
+    margin-top: 60px;
+    padding : 16px
+}

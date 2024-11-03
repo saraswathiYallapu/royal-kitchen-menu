@@ -1,8 +1,12 @@
+import Header from "./components/Header";
+import List from "./components/List";
+
 function App() {
   return (
-    <>
-      <div>Hi</div>
-    </>
+    <div className="app-container">
+      <Header />
+      <List />
+    </div>
   );
 }
 
